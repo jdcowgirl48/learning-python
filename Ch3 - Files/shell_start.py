@@ -14,10 +14,10 @@ def main():
         src = path.realpath("textfile.txt")
 
         # let's make a backup copy by appending "bak" to the name
-        dst = src + ".bak"
-        shutil.copy(src, dst)
+        # dst = src + ".bak"
+        # shutil.copy(src, dst)
         # rename the original file
-        
+        os.rename("textfile.txt", "newfile.txt")
         # now put things into a ZIP archive
 
         # more fine-grained control over ZIP files
